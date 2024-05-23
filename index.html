@@ -14,14 +14,15 @@
   </style>
 </head>
 <body>
-  <div class="container">
+  <div class="container-fluid">
     <div class="row">
-      <div class="col-12 col-md-3">
+      <div class="col-12 col-md-3 col-lg-2">
         <div class="sticky">
+          <img src="img/01.png" class="img-fluid" alt="...">
           <h1>Teste</h1>
-  
           <div class="text-center m-2">
             <button id="btnSwitch" class="btn btn-light btn-sm"><i class="bi bi-sun"></i></button>
+           
           </div>
   
           <div class="accordion accordion-flush" id="accordionFlushExample">
@@ -85,7 +86,15 @@
           </div>
         </div>
       </div>
-      <div class="col-12 col-md-9">
+      <div class="col-12 col-md-9 col-lg-10">
+        <div class="container-fluid p-0">
+
+          <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="capa">
+              <div class="w-100">
+                  <img src="img/Capa.png" class="img-fluid" alt="Capa">
+              </div>
+          </section>
+      </div>
         <section class="shadow-lg p-3 mb-5 rounded">
           <h1>Livro muito legal e informativo</h1>
           <p>
@@ -124,6 +133,42 @@
           <p>
             Pellentesque nec mollis quam. Nunc mattis leo turpis, quis congue ipsum gravida sed. Integer eget tortor nec ipsum auctor accumsan et a lacus. Nunc tincidunt, urna id suscipit malesuada, sapien est ultricies ex, sit amet vestibulum felis nibh non magna. Maecenas consequat justo mauris, id egestas neque semper sit amet. Sed accumsan elit a purus ullamcorper, et ullamcorper ligula accumsan. Curabitur sed risus lorem. Aliquam lacinia mi vel urna tincidunt porttitor.
           </p>
+          <div id="carouselExampleDark" class="carousel carousel-dark slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="10000">
+                <img src="img/pic08.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>First slide label</h5>
+                  <p>Some representative placeholder content for the first slide.</p>
+                </div>
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <img src="img/pic07.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Second slide label</h5>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="img/pic04.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+            
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
           <p>
             Cras blandit sapien quis vehicula varius. Praesent ultrices turpis in mattis porttitor. Suspendisse sed sagittis enim. Suspendisse et arcu viverra, blandit nisi a, efficitur turpis. Donec lacinia feugiat augue a luctus. Aliquam felis mi, consectetur in mi id, varius sodales est. Morbi placerat massa tempor, auctor eros ut, luctus nibh. Maecenas risus leo, interdum non egestas sit amet, consectetur a libero.
           </p>
@@ -136,6 +181,10 @@
           <p>
             Mauris at dignissim orci. Mauris condimentum lectus a odio finibus, in laoreet lacus volutpat. Vivamus vestibulum tincidunt sem vitae efficitur. Aliquam sem neque, mollis sed tempor vitae, vehicula in lacus. Fusce ex lacus, sodales nec gravida sed, viverra quis justo. Donec pharetra, lacus dapibus sollicitudin porta, orci elit rutrum tortor, et condimentum arcu est id mi. Nullam sit amet orci sit amet diam bibendum cursus quis non odio. Quisque nec lorem vel sapien malesuada tincidunt.
           </p>
+          <div align="center">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/L0A-ZPYhj3c?si=dMK8TTHhEOcmdFLw"
+             title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
           <p>
             Mauris at dignissim orci. Mauris condimentum lectus a odio finibus, in laoreet lacus volutpat. Vivamus vestibulum tincidunt sem vitae efficitur. Aliquam sem neque, mollis sed tempor vitae, vehicula in lacus. Fusce ex lacus, sodales nec gravida sed, viverra quis justo. Donec pharetra, lacus dapibus sollicitudin porta, orci elit rutrum tortor, et condimentum arcu est id mi. Nullam sit amet orci sit amet diam bibendum cursus quis non odio. Quisque nec lorem vel sapien malesuada tincidunt.
           </p>
@@ -152,7 +201,12 @@
       </div>
     </div>
   </div>
-  
+  <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
   <script>
     document.getElementById('btnSwitch').addEventListener('click',()=>{
       if (document.documentElement.getAttribute('data-bs-theme') == 'dark') {
@@ -165,5 +219,10 @@
   </script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+      new window.VLibras.Widget('https://vlibras.gov.br/app');
+  </script>
 </body>
 </html>
